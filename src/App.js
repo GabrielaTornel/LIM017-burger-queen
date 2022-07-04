@@ -1,42 +1,27 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-} from "react-router-dom";
-import { Home } from "./RouterComponents/Home";
-import { Kitchen } from "./RouterComponents/Kitchen";
-import { Login } from "./RouterComponents/Login";
-import { Register } from "./RouterComponents/Register";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/Home/Home";
+import { Kitchen } from "./Pages/Kitchen/Kitchen";
+import { Login } from "./Pages/Login/Login";
+import { Register } from "./Pages/Register/Register";
+import { AuthProvider } from "./Context/authContext";
+import { CartContextProvider } from "./Context/CartContext";
 
-export function Navigation() {
+function Navigation() {
   return (
     <Router>
-      <div className="Navigation">
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/register">About</Link>
-            </li>
-            <li>
-              <Link to="/login">Users</Link>
-            </li>
-          </ul>
-        </nav>  */}
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/kitchen" element={<Kitchen />} />
-        </Routes>
-      </div>
+      <AuthProvider>
+        <CartContextProvider>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/kitchen" element={<Kitchen />} />
+            <Route path="/" element={<Login />} />
+          </Routes>
+        </CartContextProvider>
+      </AuthProvider>
     </Router>
   );
 }
-
 
 export default Navigation;

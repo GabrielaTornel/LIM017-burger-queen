@@ -1,0 +1,26 @@
+.logout {
+    background-color: #ffffff;
+    color: black;
+    width: 80%;
+    /* margin: 50px; */
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 50%;
+    font-size: large;
+}
+.listNavbar {
+    background: rgb(24,24,27);
+    background: linear-gradient(90deg, rgba(24,24,27,0.9304096638655462) 0%, rgba(121,22,9,1) 27%, rgba(127,23,9,0.9220063025210083) 50%, rgba(255,68,0,0.8071603641456583) 97%);
+    padding: 20px;
+    margin: 0;
+}
+.listN{
+background:local
+}
+li.ex2:hover, li.ex2:active {font-size: 150%;}
+
+.navbarItems{
+    display: inline;
+}
+
+

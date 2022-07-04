@@ -1,0 +1,58 @@
+.targetOrder{
+width:30%;
+
+
+}
+.card-order {
+  background-color: #ecebe5;
+  border: 3px solid #f03849;
+  border-radius: 0.5rem;
+  display: flex;
+  /* flex: 2 1; */
+  
+  flex-direction: column;
+  /* font-size: 15px; */
+  justify-content: space-around;
+  margin: 0.5rem;
+  max-width: 15rem;
+  min-width: 15rem;
+  padding: 1rem;
+}
+.container-order{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: scroll;
+
+}
+.order-status {
+  padding: 5px;
+  display: grid;
+  justify-content: space-around;
+}
+.order-information{
+  width: 90%;
+}
+
+.statusColor1,
+.statusColor2 {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 5px 0px;
+    font-size: 25px;
+}
+
+.statusColor1 {
+    color: white;
+    background-color:orangered;
+}
+
+.statusColor2 {
+    color: green;
+    background-color: #ecebe5;
+    font-size:20px;
+    border: none;
+
+}

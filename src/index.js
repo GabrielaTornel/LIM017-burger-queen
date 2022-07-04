@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Navigation from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Navigation from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-    <Navigation />
-  // </React.StrictMode>
+  <Navigation />
+  // </React.StrictMode>hyj
 );
-
