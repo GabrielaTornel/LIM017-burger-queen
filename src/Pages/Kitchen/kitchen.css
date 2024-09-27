@@ -1,0 +1,136 @@
+
+
+.container-kitchen {
+  background-image: url(../../assets/img/background-kitchen.png);
+  display: block;
+  height: auto;
+  border-color: 1px solid white;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  width: 100%;
+}
+.targetOrder {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-left: 4%;
+}
+
+.card-order {
+  background-color: #e7e0c6;
+  border: 3px solid #493235;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5rem;
+  max-width: 300px;
+  min-width: 200px;
+} 
+.container-order{
+  width: 100%;
+  height: 100%;
+}
+body{
+ 
+  background-attachment: fixed;
+  background-position:left;
+  margin:0;
+  background-size: cover;
+}
+
+.statusButton {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  border: none;
+  margin-bottom: 0;
+}
+
+.tableClient {
+  background-color: #67380a;
+  width: 30%;
+  padding: 7px;
+  margin: 0px;
+  border: none;
+  color: white;
+  font-size: x-large;
+  justify-content: space-around;
+}
+.order-status {
+  padding: 5px;
+  display: grid;
+  justify-content: space-around;
+}
+
+.order-information {
+  width: 100%;
+  margin: 0;
+  background-color: #d9a55f;
+  display: flex;
+}
+
+.statusColor1,
+.statusColor2 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.statusColor1 {
+  width: 100%;
+  background-color: #a05c2e;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.statusColor2 {
+  width: 100%;
+  background-color: #88A02E;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.statusColor3 {
+  width: 100%;
+  background-color: #e6dfc5;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: none;
+  font-size: 100%;
+  color: black;
+  font-weight: bold;
+}
+.statusColorEarring {
+  width: 100%;
+  background-color: #E25526;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  color: white;
+  height: 50px;
+  border: none;
+  /* font-weight: bold; */
+}
+.card-order ul {
+  padding: 5px;
+}
+.total{
+  margin-bottom: 0px;
+}
+.kitchen-list {
+  display: flex;
+  border-bottom: 1px solid #d9a55f;
+  font: inherit;
+  font-style: unset;
+  font-feature-settings: "smcp";
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 8px;
+}
